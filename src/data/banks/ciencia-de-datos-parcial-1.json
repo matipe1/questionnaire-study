@@ -1,0 +1,1308 @@
+{
+  "course": "ciencia-de-datos",
+  "courseName": "Ciencia de Datos",
+  "slug": "parcial-1",
+  "title": "Parcial 1",
+  "units": [
+    "Introducción y gestión de proyectos",
+    "ETL y preprocesamiento",
+    "Visualización y análisis exploratorio",
+    "Aprendizaje automático"
+  ],
+  "questions": [
+    {
+      "id": "cdd-open-data-001",
+      "unit": 2,
+      "topic": "Fuentes de datos abiertos",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 14",
+      "type": "multiple",
+      "prompt": "¿En qué formato de archivo pueden encontrarse los datos en un sitio de Open Data?",
+      "options": [
+        {
+          "id": "csv-png",
+          "text": "Formato .csv y .png"
+        },
+        {
+          "id": "csv-xlsx",
+          "text": "Formato .csv y .xlsx"
+        },
+        {
+          "id": "csv-jpg",
+          "text": "Formato .csv y .jpg"
+        },
+        {
+          "id": "csv-json",
+          "text": "Formato .csv y .json"
+        },
+        {
+          "id": "xlsx-xml",
+          "text": "formato .xlsx y .xml"
+        }
+      ],
+      "correctOptionIds": [
+        "csv-json",
+        "xlsx-xml",
+        "csv-xlsx"
+      ],
+      "points": 1,
+      "explanation": "La clave de la sumativa marca las combinaciones que incluyen CSV, JSON, XLSX y XML como formatos de datos."
+    },
+    {
+      "id": "cdd-ex-sumativa-002",
+      "unit": 1,
+      "topic": "Scrum",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 14",
+      "type": "single",
+      "prompt": "¿Qué reunión se debe llevar a cabo de pié?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La reunión diaria o daily"
+        },
+        {
+          "id": "opcion-2",
+          "text": "La reunión de priorización de Backlog"
+        },
+        {
+          "id": "opcion-3",
+          "text": "La reunión de revisión de Sprint"
+        },
+        {
+          "id": "opcion-4",
+          "text": "La planificación del Sprint"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "La sumativa identifica la reunión diaria como la reunión que se realiza de pie."
+    },
+    {
+      "id": "cdd-ex-sumativa-003",
+      "unit": 4,
+      "topic": "Regresión lineal",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 15",
+      "type": "single",
+      "prompt": "¿Qué representa el intercepto en un modelo lineal?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El valor esperado de Y cuando X=0"
+        },
+        {
+          "id": "opcion-2",
+          "text": "El valor de X cuando Y=0"
+        },
+        {
+          "id": "opcion-3",
+          "text": "El error medio"
+        },
+        {
+          "id": "opcion-4",
+          "text": "La pendiente de la recta"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "El intercepto es la predicción del modelo cuando X vale cero."
+    },
+    {
+      "id": "cdd-ex-sumativa-004",
+      "unit": 4,
+      "topic": "PCA",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 15",
+      "type": "single",
+      "prompt": "¿Cuál es el objetivo principal del Análisis de Componentes Principales (PCA)?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Eliminar outliers de los datos"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Aumentar la dimensionalidad de los datos"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Reducir la dimensionalidad mientras se preserva la mayor varianza posible"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Clasificar datos en categorías"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "PCA proyecta los datos a menos dimensiones y conserva la mayor varianza posible para el número de componentes elegido."
+    },
+    {
+      "id": "cdd-ex-sumativa-005",
+      "unit": 4,
+      "topic": "Regresión lineal",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 16",
+      "type": "single",
+      "prompt": "¿Cuál de los siguientes supuestos pertenece a la regresión lineal?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Los residuos son homocedásticos y con media cero"
+        },
+        {
+          "id": "opcion-2",
+          "text": "La variable dependiente debe ser categórica"
+        },
+        {
+          "id": "opcion-3",
+          "text": "No hay ruido en los datos"
+        },
+        {
+          "id": "opcion-4",
+          "text": "La muestra debe ser menor a 100 observaciones"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "El supuesto combina una media del error igual a cero con una varianza constante."
+    },
+    {
+      "id": "cdd-ex-sumativa-006",
+      "unit": 1,
+      "topic": "Historias de usuario",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 16",
+      "type": "single",
+      "prompt": "¿Quién es el encargado de realizar las Historias de Usuario?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El equipo de Desarrollo"
+        },
+        {
+          "id": "opcion-2",
+          "text": "El Dueño de Producto"
+        },
+        {
+          "id": "opcion-3",
+          "text": "El Lider de scrum (Scrum Master)"
+        },
+        {
+          "id": "opcion-4",
+          "text": "El coach Agil"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "La sumativa atribuye la elaboración de las historias de usuario al equipo de Desarrollo."
+    },
+    {
+      "id": "cdd-ex-sumativa-007",
+      "unit": 3,
+      "topic": "Mediana",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 16",
+      "type": "single",
+      "prompt": "¿Cuál es la mediana de los siguientes datos: 10, 15, 20, 25, 30?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La mediana es 20"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Es imposible de calcular con estos datos"
+        },
+        {
+          "id": "opcion-3",
+          "text": "La mediana es 15"
+        },
+        {
+          "id": "opcion-4",
+          "text": "La mediana es 22,5"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "20 ocupa la tercera posición de los cinco valores ordenados."
+    },
+    {
+      "id": "cdd-ex-sumativa-008",
+      "unit": 2,
+      "topic": "Limpieza de datos",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 17",
+      "type": "single",
+      "prompt": "¿Cuál es uno de los objetivos de la limpieza de datos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Crear modelos de aprendizaje automático"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Identificar y eliminar valores atípicos y resolver inconsistencias"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Cambiar el formato de los datos a un estilo visual atractivo"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Aumentar el número de datos mediante duplicación"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La limpieza incluye detectar valores atípicos, decidir su tratamiento y resolver inconsistencias."
+    },
+    {
+      "id": "cdd-ex-sumativa-009",
+      "unit": 4,
+      "topic": "Aprendizaje no supervisado",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 17",
+      "type": "single",
+      "prompt": "¿Cuál es el principal objetivo del aprendizaje no supervisado?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Maximizar una función de recompensa a través de ensayo y error"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Entrenar modelos usando datos etiquetados y conocidos"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Encontrar patrones o estructuras ocultas en los datos sin etiquetas"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Clasificar datos en categorías conocidas previamente"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "El método busca estructura en los datos sin etiquetas de referencia."
+    },
+    {
+      "id": "cdd-ex-sumativa-010",
+      "unit": 2,
+      "topic": "Escalado",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 18",
+      "type": "single",
+      "prompt": "¿Cuál es la diferencia principal entre el escalado Min-Max (Normalización) y la Estandarización (StandardScaler)?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El escalado Min-Max solo funciona con variables categóricas y la estandarización solo con variables cuantitativas."
+        },
+        {
+          "id": "opcion-2",
+          "text": "La estandarización es un método de aprendizaje no supervisado y el escalado Min-Max es supervisado."
+        },
+        {
+          "id": "opcion-3",
+          "text": "La estandarización transforma los datos para que tengan media 0 y desviación estándar 1, mientras que el escalado Min-Max acota los datos a un rango fijo, generalmente entre 0 y 1."
+        },
+        {
+          "id": "opcion-4",
+          "text": "El escalado Min-Max elimina por completo los outliers, mientras que la estandarización los duplica."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "La estandarización centra y escala con la media y la desviación estándar. Min-Max reescala a un intervalo."
+    },
+    {
+      "id": "cdd-ex-sumativa-011",
+      "unit": 2,
+      "topic": "One-Hot Encoding",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 18",
+      "type": "single",
+      "prompt": "¿Qué desventaja puede tener el uso de One Hot Encoding?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Reduce la precisión del modelo"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Solo funciona con variables numéricas"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Puede crear un gran número de columnas"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Siempre disminuye el rendimiento computacional"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Cada categoría puede agregar una columna, de modo que una variable con muchas categorías puede ensanchar el conjunto de datos."
+    },
+    {
+      "id": "cdd-ex-sumativa-012",
+      "unit": 1,
+      "topic": "Proceso de Ciencia de Datos",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 19",
+      "type": "single",
+      "prompt": "¿Cuál es el orden correcto del proceso de Ciencia de Datos según la cátedra?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Entrenamiento → ETL → Deploy → Evaluación"
+        },
+        {
+          "id": "opcion-2",
+          "text": "ETL → Elección del modelo → Entrenamiento → Rendimiento"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Deploy → ETL → Validación"
+        },
+        {
+          "id": "opcion-4",
+          "text": "ETL → Análisis exploratorio → Elección del modelo → Entrenamiento → Evaluación"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "La secuencia de la cátedra prepara y explora los datos antes de elegir, entrenar y evaluar el modelo."
+    },
+    {
+      "id": "cdd-ex-sumativa-013",
+      "unit": 1,
+      "topic": "Evaluación de proyectos",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 19",
+      "type": "single",
+      "prompt": "¿Cuál es el objetivo principal de la fase de evaluación en el ciclo de vida de un proyecto de ciencia de datos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Determinar si el modelo cumple con los requisitos del negocio y es efectivo en su rendimiento"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Crear visualizaciones atractivas para presentar los resultados"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Recopilar más datos para futuras investigaciones"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Definir nuevos problemas de negocio a resolver"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "La evaluación comprueba si el rendimiento del modelo satisface los objetivos del negocio."
+    },
+    {
+      "id": "cdd-ex-sumativa-014",
+      "unit": 2,
+      "topic": "Calidad de datos",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 20",
+      "type": "single",
+      "prompt": "¿Cuál de los siguientes NO es un aspecto de la calidad de los datos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Precisión"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Actualidad"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Integridad"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Complejidad"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "La clave considera precisión, actualidad e integridad como dimensiones de la calidad de los datos."
+    },
+    {
+      "id": "cdd-ex-sumativa-015",
+      "unit": 2,
+      "topic": "Web scraping",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 20",
+      "type": "single",
+      "prompt": "¿Qué desafío ético se debe considerar al realizar web scraping?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La elección del lenguaje de programación"
+        },
+        {
+          "id": "opcion-2",
+          "text": "El costo de los servidores"
+        },
+        {
+          "id": "opcion-3",
+          "text": "El respeto a los términos de servicio del sitio web"
+        },
+        {
+          "id": "opcion-4",
+          "text": "La velocidad de internet"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Revisar los términos del sitio permite considerar las condiciones bajo las que ofrece su contenido."
+    },
+    {
+      "id": "cdd-ex-sumativa-016",
+      "unit": 4,
+      "topic": "Métricas de regresión",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 21",
+      "type": "single",
+      "prompt": "¿Qué métrica se usa para medir el ajuste en regresión?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "MSE"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Accuracy"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Recall"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Gini"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "MSE promedia los cuadrados de los errores entre los valores observados y predichos."
+    },
+    {
+      "id": "cdd-ex-sumativa-017",
+      "unit": 3,
+      "topic": "Data Storytelling",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 21",
+      "type": "single",
+      "prompt": "¿Qué busca la visualización en el contexto de Data Storytelling?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Destacar relaciones y apoyar el insight"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Reemplazar las métricas"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Mostrar todos los datos posibles"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Aumentar el tamaño del dataset"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "La visualización facilita ver la relación relevante y aporta evidencia al hallazgo comunicado."
+    },
+    {
+      "id": "cdd-ex-sumativa-018",
+      "unit": 1,
+      "topic": "Scrum",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 22",
+      "type": "single",
+      "prompt": "¿Quién y en cuál ceremonia presenta al cliente la demo del producto?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El equipo scrum en el Sprint Cero"
+        },
+        {
+          "id": "opcion-2",
+          "text": "El equipo scrum en el Sprint Review"
+        },
+        {
+          "id": "opcion-3",
+          "text": "El Product Owner en el Sprint Review"
+        },
+        {
+          "id": "opcion-4",
+          "text": "El coach Agil en el Sprint Review"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Según la sumativa, el equipo Scrum presenta la demo en la revisión del sprint."
+    },
+    {
+      "id": "cdd-ex-sumativa-019",
+      "unit": 2,
+      "topic": "Tipos de variables",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 22",
+      "type": "single",
+      "prompt": "¿Cuál de las siguientes opciones es un ejemplo de variable categórica ordinal?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Color de un coche (rojo, negro, blanco, azul)"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Número de hijos en una familia"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Peso de un objeto"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Nivel de satisfacción en una encuesta (bajo, medio, alto)"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Bajo, medio y alto son categorías con un orden natural."
+    },
+    {
+      "id": "cdd-ex-sumativa-020",
+      "unit": 2,
+      "topic": "Open Data",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 23",
+      "type": "multiple",
+      "prompt": "La iniciativa de Open Data tiene como objetivos... (En esta pregunta marque 3 respuestas)",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Permitir el acceso a los datos restringidos de gestión del gobierno"
+        },
+        {
+          "id": "opcion-2",
+          "text": "ofrecer valor a los ciudadanos con los datos de la gestion gubernamental"
+        },
+        {
+          "id": "opcion-3",
+          "text": "aumentar la transparencia de la administración publica"
+        },
+        {
+          "id": "opcion-4",
+          "text": "ayudar a las empresas privadas a realizar negocios con los datos"
+        },
+        {
+          "id": "opcion-5",
+          "text": "favorecer la difusión de las actividades \"comerciales\" y \"de ciudadanos\" de una localidad"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2",
+        "opcion-5",
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "La clave asocia los datos abiertos con el valor para la ciudadanía, la transparencia y la difusión de actividades."
+    },
+    {
+      "id": "cdd-ex-sumativa-021",
+      "unit": 3,
+      "topic": "Media",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 23",
+      "type": "single",
+      "prompt": "¿Cuál es la media de los siguientes datos: 5, 8, 12, 15, 20?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La media es (5 + 8 + 12 + 15 + 20) / (5 + 8 + 12 + 15 + 20)"
+        },
+        {
+          "id": "opcion-2",
+          "text": "La media es (5 + 8 + 12 + 15 + 20) / (5 + 20)"
+        },
+        {
+          "id": "opcion-3",
+          "text": "La media es (5 + 8 + 12 + 15 + 20) / 5"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Se suman los cinco valores y se divide por cinco."
+    },
+    {
+      "id": "cdd-ex-sumativa-022",
+      "unit": 4,
+      "topic": "Sesgo y varianza",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 24",
+      "type": "single",
+      "prompt": "¿Qué efecto tiene un modelo con exceso de complejidad?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Aumenta el sobreajuste y la varianza"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Mejora la generalización"
+        },
+        {
+          "id": "opcion-3",
+          "text": "No afecta el error"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Disminuye el sesgo"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "Un modelo demasiado flexible puede ajustarse al ruido del entrenamiento y mostrar mayor varianza."
+    },
+    {
+      "id": "cdd-ex-sumativa-023",
+      "unit": 4,
+      "topic": "Regresión logística",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 24",
+      "type": "single",
+      "prompt": "¿Cuál es el principal objetivo de la regresión logística?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Agrupar datos similares"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Clasificar datos en categorías"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Predecir valores continuos"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Reducir la dimensionalidad de los datos"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "El modelo estima probabilidades que permiten asignar una clase."
+    },
+    {
+      "id": "cdd-ex-sumativa-024",
+      "unit": 2,
+      "topic": "Limpieza de datos",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 25",
+      "type": "single",
+      "prompt": "¿Qué significa \"resolver inconsistencias\" en el proceso de limpieza de datos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Ajustar el tamaño del conjunto de datos eliminando registros"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Corregir discrepancias en códigos o nombres dentro del conjunto de datos"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Cambiar todos los datos a un formato numérico"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Ignorar datos que no son relevantes"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Resolver inconsistencias incluye unificar códigos o nombres que se refieren a lo mismo."
+    },
+    {
+      "id": "cdd-ex-sumativa-025",
+      "unit": 2,
+      "topic": "Tipos de variables",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 25",
+      "type": "single",
+      "prompt": "¿Qué tipo de variable es la temperatura medida en grados Celsius?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Categórica"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Discreta"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Binaria"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Continua"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "La temperatura puede tomar valores intermedios dentro de un intervalo."
+    },
+    {
+      "id": "cdd-ex-sumativa-026",
+      "unit": 3,
+      "topic": "Mediana",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 26",
+      "type": "single",
+      "prompt": "¿Qué sucede si hay un número par de datos y dos valores centrales, cuando debemos calcular una mediana?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "En ese caso, la mediana se calcula restando los dos valores centrales."
+        },
+        {
+          "id": "opcion-2",
+          "text": "En ese caso, la mediana se calcula promediando los dos valores centrales."
+        },
+        {
+          "id": "opcion-3",
+          "text": "En ese caso, la mediana se calcula sumando los dos valores centrales."
+        },
+        {
+          "id": "opcion-4",
+          "text": "En ese caso, la mediana se calcula dividiendo los dos valores centrales."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Con una cantidad par de observaciones ordenadas, se promedian las dos centrales."
+    },
+    {
+      "id": "cdd-ex-sumativa-027",
+      "unit": 4,
+      "topic": "Reglas de asociación",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 26",
+      "type": "single",
+      "prompt": "¿Cuál es la diferencia fundamental en el funcionamiento de los algoritmos Apriori y FP-Growth para la búsqueda de conjuntos de elementos frecuentes?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Apriori genera candidatos paso a paso y requiere múltiples pasadas por la base de datos, mientras que FP-Growth comprime la base de datos en una estructura de árbol (FP-Tree) evitando la generación costosa de candidatos."
+        },
+        {
+          "id": "opcion-2",
+          "text": "FP-Growth solo funciona con variables numéricas continuas y Apriori solo sirve para texto (Web Scraping)."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Apriori calcula el Soporte (Support) de las reglas de asociación, mientras que FP-Growth solo calcula la Confianza (Confidence)."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Apriori utiliza una estrategia basada en redes neuronales, mientras que FP-Growth utiliza árboles de decisión para clasificar."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "Apriori explora candidatos por niveles. FP-Growth usa un árbol que comprime las transacciones y evita generarlos explícitamente."
+    },
+    {
+      "id": "cdd-ex-sumativa-028",
+      "unit": 3,
+      "topic": "Análisis exploratorio",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 27",
+      "type": "single",
+      "prompt": "¿Qué herramienta recomienda la cátedra para el análisis exploratorio?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "RStudio"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Tableau"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Power BI"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Google Colab"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "La clave de esta sumativa indica Google Colab como herramienta recomendada por la cátedra."
+    },
+    {
+      "id": "cdd-ex-sumativa-029",
+      "unit": 2,
+      "topic": "One-Hot Encoding",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 27",
+      "type": "single",
+      "prompt": "¿Cuál es el propósito principal de One Hot Encoding?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Convertir variables categóricas en variables numéricas binarias"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Normalizar variables numéricas"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Comprimir datos categóricos"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Reducir la dimensionalidad de los datos"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "La técnica representa categorías mediante indicadores binarios."
+    },
+    {
+      "id": "cdd-ex-sumativa-030",
+      "unit": 2,
+      "topic": "Web scraping",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 28",
+      "type": "single",
+      "prompt": "¿Qué es web scraping?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Una técnica para diseñar sitios web"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Una herramienta para optimizar motores de búsqueda"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Un método para extraer datos de sitios web"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Un protocolo de seguridad web"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "El web scraping extrae datos del contenido de sitios web."
+    },
+    {
+      "id": "cdd-ex-sumativa-031",
+      "unit": 2,
+      "topic": "ETL",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 28",
+      "type": "single",
+      "prompt": "¿Cuál es el propósito principal del proceso ETL?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Crear visualizaciones de datos"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Encriptar datos sensibles"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Analizar datos en tiempo real"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Integrar datos de múltiples fuentes en un destino común"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "ETL extrae datos de sus fuentes, los transforma y los carga en un destino común."
+    },
+    {
+      "id": "cdd-ex-sumativa-032",
+      "unit": 4,
+      "topic": "Regresión logística",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 29",
+      "type": "single",
+      "prompt": "¿Qué función se utiliza comúnmente en regresión logística para transformar la salida lineal en una probabilidad?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Función logarítmica"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Función polinómica"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Función lineal"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Función sigmoide"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "La sigmoide transforma un valor real en una probabilidad entre cero y uno."
+    },
+    {
+      "id": "cdd-ex-sumativa-033",
+      "unit": 2,
+      "topic": "ETL",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 29",
+      "type": "single",
+      "prompt": "¿Qué significa ETL en el contexto de datos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Extract, Transform, Load"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Explore, Train, Learn"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Encrypt, Transfer, Lock"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Evaluate, Test, Launch"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "Las tres etapas son extracción, transformación y carga."
+    },
+    {
+      "id": "cdd-ex-sumativa-034",
+      "unit": 1,
+      "topic": "Scrum",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 30",
+      "type": "single",
+      "prompt": "¿Quién es el encargado de priorizar el Backlog de producto?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El equipo de Desarrollo"
+        },
+        {
+          "id": "opcion-2",
+          "text": "El Lider de scrum (Scrum Master)"
+        },
+        {
+          "id": "opcion-3",
+          "text": "El Dueño de Producto"
+        },
+        {
+          "id": "opcion-4",
+          "text": "El coach Agil"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "El Dueño de Producto es responsable de ordenar el Product Backlog."
+    },
+    {
+      "id": "cdd-ex-sumativa-035",
+      "unit": 4,
+      "topic": "Validación cruzada",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 30",
+      "type": "single",
+      "prompt": "¿Cuál es el objetivo de la validación cruzada (k-fold)?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Crear nuevas variables"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Quitar outliers"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Medir el desempeño promedio y evitar sobreajuste"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Reducir tiempo de entrenamiento"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "K-Fold estima el rendimiento promedio sobre particiones distintas y ayuda a detectar el sobreajuste."
+    },
+    {
+      "id": "cdd-ex-sumativa-036",
+      "unit": 1,
+      "topic": "Data Driven Scrum",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 31",
+      "type": "single",
+      "prompt": "¿Cuál es el propósito de una Retrospectiva en DDS?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Revisar y analizar los resultados de la iteración"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Coordinar las actividades del día"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Inspeccionar y adaptar el proceso del equipo para fomentar la mejora continua"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Seleccionar ítems del backlog para la próxima iteración"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "La retrospectiva revisa cómo trabaja el equipo para identificar mejoras."
+    },
+    {
+      "id": "cdd-ex-sumativa-037",
+      "unit": 1,
+      "topic": "Scrum",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 31",
+      "type": "single",
+      "prompt": "Establecer claramente los items del Product Backlog (PBI) es una responsabilidad del:",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Scrum Master"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Dueño del producto"
+        },
+        {
+          "id": "opcion-3",
+          "text": "El equipo Scrum"
+        },
+        {
+          "id": "opcion-4",
+          "text": "El usuario"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La sumativa atribuye al Dueño del Producto la responsabilidad de establecer con claridad los ítems del Product Backlog."
+    },
+    {
+      "id": "cdd-ex-sumativa-038",
+      "unit": 4,
+      "topic": "Regularización",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 32",
+      "type": "single",
+      "prompt": "¿Cuál es la diferencia principal entre Lasso y Ridge?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "No tienen diferencias"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Lasso usa penalización L1 y puede anular coeficientes"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Ridge usa L1 y elimina variables"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Lasso usa L2"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Lasso usa penalización L1 y puede llevar coeficientes a cero. Ridge usa L2."
+    },
+    {
+      "id": "cdd-ex-sumativa-039",
+      "unit": 4,
+      "topic": "Validación de modelos",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 32",
+      "type": "single",
+      "prompt": "¿Qué ocurre durante la fase de validación en el ajuste de modelos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Se aplica la técnica de One-Hot Encoding a las variables categóricas."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Se evalúa la capacidad del modelo para generalizar sobre datos que no ha visto previamente."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Se decide el valor de K usando el método del codo."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Se entrena el modelo usando el conjunto de entrenamiento."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La validación estima el rendimiento sobre observaciones que quedaron fuera del entrenamiento."
+    },
+    {
+      "id": "cdd-ex-sumativa-040",
+      "unit": 3,
+      "topic": "Comunicación de resultados",
+      "origin": "past-exam",
+      "source": "CDD - SumativaTodo respondido, sección ¡PREGUNTAS DE EX-SUMATIVAS!, p. 33",
+      "type": "multiple",
+      "prompt": "¿Cuales de las siguente características NO corresponde a una presentación efectiva?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Mostrar en graficos circulares sin cifras los porcentajes de crecimiento comparado contra otro período"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Provocar la atención del asistente con ruidos y gestos exagerados"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Llamar la atención con cambios en los tonos de voz"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Generar empatia con el asistente"
+        },
+        {
+          "id": "opcion-5",
+          "text": "Proporcionar toda la información recabada durante la investigación"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2",
+        "opcion-1",
+        "opcion-5"
+      ],
+      "points": 1,
+      "explanation": "Una presentación efectiva facilita comparar datos, mantiene la atención sin exageraciones y selecciona la información pertinente."
+    }
+  ]
+}
