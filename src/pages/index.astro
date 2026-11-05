@@ -5,8 +5,12 @@ import { exams } from '../data/exams.js';
 <StudyLayout title="Inicio">
   <main class="frame catalog">
     <h1>Cuestionarios de estudio</h1>
-    <ul class="exam-list">
-      {exams.map(exam => <li><a href={`/${exam.course}/${exam.slug}/`}>{exam.courseName} · {exam.title}</a><span>{exam.questions.length} preguntas</span></li>)}
-    </ul>
+    {exams.length ? (
+      <ul class="exam-list">
+        {exams.map(exam => <li><a href={`/${exam.course}/${exam.slug}/`}>{exam.courseName} · {exam.title}</a><span>{exam.questions.length} preguntas</span></li>)}
+      </ul>
+    ) : (
+      <p class="overview">Todavía no hay cuestionarios disponibles en esta versión.</p>
+    )}
   </main>
 </StudyLayout>

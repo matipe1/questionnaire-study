@@ -1,15 +1,3 @@
-import cdd from './ciencia-de-datos-parcial-1.json';
+const banks = import.meta.glob('./banks/*.json', { eager: true, import: 'default' });
 
-export const exams = [{
-  course: 'ciencia-de-datos',
-  courseName: 'Ciencia de Datos',
-  slug: 'parcial-1',
-  title: 'Parcial 1',
-  units: [
-    'Introducción y gestión de proyectos',
-    'ETL y preprocesamiento',
-    'Visualización y análisis exploratorio',
-    'Aprendizaje automático',
-  ],
-  questions: cdd.questions,
-}];
+export const exams = Object.values(banks);

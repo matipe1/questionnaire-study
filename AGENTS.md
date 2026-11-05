@@ -1,3 +1,7 @@
+## Bancos de preguntas
+
+Para crear o ampliar un cuestionario, seguí el flujo y el formato de [README.md](README.md#crear-o-ampliar-un-cuestionario-con-un-agente).
+
 ## Development
 
 When starting the dev server, use background mode:
