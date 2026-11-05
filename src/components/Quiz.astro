@@ -44,10 +44,23 @@ const available = new Set(exam.questions.map(question => question.unit));
           <label class="choice"><input type="radio" name="feedback" value="each" checked />Después de cada pregunta</label>
           <label class="choice"><input type="radio" name="feedback" value="end" />Al finalizar</label>
         </fieldset>
+        <fieldset>
+          <legend>Tiempo del intento</legend>
+          <label class="choice"><input type="checkbox" name="timed" />Agregar temporizador</label>
+          <div class="timer-settings" data-timer-settings hidden>
+            <label for="minutes-per-question">Minutos por pregunta</label>
+            <input id="minutes-per-question" name="minutes" type="number" value="2" min="0.1" max="1440" step="0.1" required disabled />
+            <p data-timer-total></p>
+          </div>
+        </fieldset>
         <p data-count role="status"></p>
         <button class="primary" type="submit">Iniciar cuestionario</button>
       </form>
     </section>
+    <div class="timer-bar" data-timer-bar hidden>
+      <span>Tiempo restante</span>
+      <strong role="timer" aria-live="off" data-time-left></strong>
+    </div>
     <section data-view="attempt" hidden aria-label="Intento en curso">
       <div data-current></div>
       <div class="actions">
@@ -69,6 +82,7 @@ const available = new Set(exam.questions.map(question => question.unit));
     </section>
     <section data-view="review" hidden>
       <h2 tabindex="-1">Revisión del intento</h2>
+      <p data-time-expired hidden>Se agotó el tiempo. El intento se envió automáticamente.</p>
       <dl class="result-summary">
         <dt>Estado</dt><dd>Finalizado</dd>
         <dt>Calificación</dt><dd data-score></dd>

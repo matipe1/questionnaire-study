@@ -72,7 +72,7 @@ form legend { font-weight: 600; padding: 0 .55rem 0 0; }
 .clear { margin: .65rem 0 0 1.75rem; }
 .feedback { margin-top: .65rem; background: #fff4d7; border-radius: .45rem; padding: .85rem 1rem; overflow-wrap: anywhere; }
 .feedback p { margin: .35rem 0; }
-.feedback small { color: #5b4d2a; }
+.feedback small { color: #5b4d2a; font-size: .75rem; }
 .actions, .actions-group { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
 .actions { justify-content: space-between; margin-top: 1.1rem; }
 .result-summary { display: grid; grid-template-columns: max-content 1fr; max-width: 42rem; border: 1px solid var(--border); border-radius: .4rem; margin: 0 0 1.3rem; overflow: hidden; }
@@ -97,3 +97,12 @@ form legend { font-weight: 600; padding: 0 .55rem 0 0; }
   .choice { align-items: center; }
   .choice input { align-self: center; margin-block: 0; }
 }
+
+.timer-settings { margin: .35rem 0 0 1.7rem; }
+.timer-settings input { width: 5rem; margin-inline-start: .45rem; padding: .3rem; font: inherit; color: inherit; background: white; border: 1px solid #929ca4; border-radius: .3rem; }
+.timer-settings p { margin: .4rem 0 0; color: var(--muted); font-size: .9rem; }
+.timer-bar { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .4rem .75rem; margin-bottom: .85rem; }
+.timer-bar strong { min-width: 3.5rem; font-variant-numeric: tabular-nums; text-align: end; }
+.question .correct { color: #155c32; }
+.question .incorrect { color: #8b2525; }
+.option-verdict { margin-inline-start: .35em; font-size: .8rem; font-weight: 600; }
