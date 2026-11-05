@@ -22,6 +22,10 @@ export function mountQuiz(root) {
   const units = [...form.querySelectorAll('[name="unit"]:enabled')];
   const start = form.querySelector('[type="submit"]');
   const all = find('all-units');
+  const timed = form.querySelector('[name="timed"]');
+  const minutes = form.querySelector('[name="minutes"]');
+  let deadline = 0, timerId;
+
   let items = [], position = 0, immediate = true;
 
   function eligible() {
@@ -37,7 +41,13 @@ export function mountQuiz(root) {
     all.indeterminate = chosen > 0 && chosen < units.length;
     all.disabled = units.length === 0;
     const count = eligible().length;
+    find('timer-settings').hidden = !timed.checked;
+    minutes.disabled = !timed.checked;
     start.disabled = count === 0;
+    const total = count * minutes.valueAsNumber;
+    find('timer-total').textContent = minutes.validity.valid && Number.isFinite(total)
+      ? `Tiempo total: ${new Intl.NumberFormat('es-AR', { maximumFractionDigits: 1 }).format(total)} min. Al agotarse, se envía el intento.`
+      : '';
     find('count').textContent = count
       ? `${count} ${count === 1 ? 'pregunta disponible' : 'preguntas disponibles'}`
       : 'No hay preguntas para esta selección. Cambiá las unidades o el origen.';
@@ -46,6 +56,7 @@ export function mountQuiz(root) {
   function show(view) {
     root.querySelectorAll('[data-view]').forEach(panel => { panel.hidden = panel.dataset.view !== view; });
     find('navigation').hidden = view !== 'attempt';
+    find('timer-bar').hidden = !deadline || (view !== 'attempt' && view !== 'summary');
   }
 
   function updateIndex() {
@@ -71,6 +82,8 @@ export function mountQuiz(root) {
     select('points').textContent = `Puntúa como ${formatPoints.format(item.points)}`;
     select('prompt').textContent = item.prompt;
     options.disabled = locked;
+    const verdict = locked && item.selected.size ? (isCorrect(item) ? 'correct' : 'incorrect') : '';
+    if (verdict) status.classList.add(verdict);
     options.querySelector('legend').textContent = item.type === 'multiple' ? 'Seleccione una o más:' : 'Seleccione una:';
 
     function updateAnswer() {
@@ -98,7 +111,19 @@ export function mountQuiz(root) {
         else item.selected.delete(option.id);
         updateAnswer();
       });
-      label.append(input, document.createTextNode(option.text));
+      const text = document.createElement('span');
+      text.textContent = option.text;
+      label.append(input, text);
+      if (locked) {
+        const correct = item.correctOptionIds.includes(option.id);
+        const wrong = item.selected.has(option.id) && !correct;
+        if (correct || wrong) {
+          const marker = document.createElement('span');
+          marker.className = correct ? 'option-verdict correct' : 'option-verdict incorrect';
+          marker.textContent = correct ? 'Correcta' : 'Incorrecta';
+          text.append(' ', marker);
+        }
+      }
       options.append(label);
     }
 
@@ -122,15 +147,18 @@ export function mountQuiz(root) {
     });
     updateFlag();
 
+    updateAnswer();
     if (locked) {
       select('explanation').hidden = false;
       const earned = isCorrect(item) ? item.points : 0;
-      select('verdict').textContent = `${earned} de ${item.points} puntos`;
+      const result = document.createElement('span');
+      if (verdict) result.classList.add(verdict);
+      result.textContent = status.textContent;
+      select('verdict').append(result, ` · ${formatPoints.format(earned)} de ${formatPoints.format(item.points)} puntos`);
       select('key').textContent = 'Respuesta correcta: ' + item.options.filter(o => item.correctOptionIds.includes(o.id)).map(o => o.text).join(' · ');
       select('reason').textContent = item.explanation;
       select('source').textContent = [originLabels[item.origin], item.source].filter(Boolean).join(' · ');
     }
-    updateAnswer();
     return fragment;
   }
 
@@ -149,6 +177,19 @@ export function mountQuiz(root) {
     updateSettings();
   });
 
+  minutes.addEventListener('input', updateSettings);
+
+  function stopTimer() {
+    clearInterval(timerId);
+    deadline = 0;
+  }
+
+  function updateTimer() {
+    const seconds = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+    find('time-left').textContent = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+    if (seconds === 0) finishAttempt(true);
+  }
+
   form.addEventListener('submit', event => {
     event.preventDefault();
     const filtered = eligible();
@@ -164,6 +205,12 @@ export function mountQuiz(root) {
       button.addEventListener('click', () => openQuestion(i));
       return button;
     }));
+    stopTimer();
+    if (timed.checked) {
+      deadline = Date.now() + minutes.valueAsNumber * items.length * 60_000;
+      updateTimer();
+      timerId = setInterval(updateTimer, 250);
+    }
     openQuestion(0);
   });
 
@@ -185,14 +232,17 @@ export function mountQuiz(root) {
     root.querySelector('[data-view="summary"] h2').focus();
   });
   find('back').addEventListener('click', () => openQuestion(position));
-  find('finish').addEventListener('click', () => {
+  function finishAttempt(expired = false) {
+    stopTimer();
+    find('time-expired').hidden = !expired;
     const score = items.reduce((sum, item) => sum + (isCorrect(item) ? item.points : 0), 0);
     const max = items.reduce((sum, item) => sum + item.points, 0);
     find('score').textContent = `${formatPoints.format(score)} de ${formatPoints.format(max)}`;
     find('review').replaceChildren(...items.map((item, i) => renderQuestion(item, i, true)));
     show('review');
     root.querySelector('[data-view="review"] h2').focus();
-  });
+  }
+  find('finish').addEventListener('click', () => finishAttempt());
   find('restart').addEventListener('click', () => {
     show('setup');
     form.querySelector('input:enabled')?.focus();
