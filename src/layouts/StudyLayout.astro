@@ -1,0 +1,19 @@
+---
+import '../styles/study.css';
+const { title, courseName } = Astro.props;
+---
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | Cuestionarios</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">Cuestionarios</a>
+      {courseName && <span class="top-course">{courseName}</span>}
+    </header>
+    <slot />
+  </body>
+</html>

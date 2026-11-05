@@ -1,0 +1,111 @@
+---
+const { exam } = Astro.props;
+const available = new Set(exam.questions.map(question => question.unit));
+---
+<div class="frame quiz-shell" data-quiz data-bank={JSON.stringify(exam.questions)}>
+  <aside class="course-index" aria-label="Índice del curso">
+    <strong>{exam.courseName}</strong>
+    <a href={Astro.url.pathname} aria-current="page">{exam.title}</a>
+    <nav aria-label="Navegación del cuestionario" data-navigation hidden>
+      <h2>Navegación por el cuestionario</h2>
+      <div class="question-index" data-index></div>
+    </nav>
+  </aside>
+  <main class="quiz-main">
+    <div class="breadcrumb"><a href="/">Cuestionarios</a><span aria-hidden="true">/</span>{exam.courseName}</div>
+    <h1>{exam.title}</h1>
+    <section data-view="setup" aria-labelledby="settings-title">
+      <div class="overview">Elegí las unidades y configurá cómo querés practicar.</div>
+      <form data-settings>
+        <h2 id="settings-title">Configuración del intento</h2>
+        <fieldset>
+          <legend>Unidades</legend>
+          <label class="choice"><input type="checkbox" data-all-units checked />Todas las unidades</label>
+          {exam.units.map((name, i) => (
+            <label class="choice" class:list={{ unavailable: !available.has(i + 1) }}>
+              <input type="checkbox" name="unit" value={i + 1} checked={available.has(i + 1)} disabled={!available.has(i + 1)} />
+              <span>Unidad {i + 1}. {name}{!available.has(i + 1) && <small> · Sin preguntas</small>}</span>
+            </label>
+          ))}
+        </fieldset>
+        <fieldset>
+          <legend>Origen de las preguntas</legend>
+          <label class="choice"><input type="radio" name="origin" value="all" checked />Todas</label>
+          <label class="choice"><input type="radio" name="origin" value="past-exam" />Parciales anteriores</label>
+          <label class="choice"><input type="radio" name="origin" value="ai-generated" />Generadas por IA</label>
+        </fieldset>
+        <fieldset>
+          <legend>Orden de las preguntas</legend>
+          <label class="choice"><input type="radio" name="order" value="ordered" checked />En orden</label>
+          <label class="choice"><input type="radio" name="order" value="mixed" />Mezcladas</label>
+        </fieldset>
+        <fieldset>
+          <legend>Cuándo ver la corrección</legend>
+          <label class="choice"><input type="radio" name="feedback" value="each" checked />Después de cada pregunta</label>
+          <label class="choice"><input type="radio" name="feedback" value="end" />Al finalizar</label>
+        </fieldset>
+        <p data-count role="status"></p>
+        <button class="primary" type="submit">Iniciar cuestionario</button>
+      </form>
+    </section>
+    <section data-view="attempt" hidden aria-label="Intento en curso">
+      <div data-current></div>
+      <div class="actions">
+        <button type="button" data-previous>Página anterior</button>
+        <div class="actions-group">
+          <button type="button" class="primary" data-check>Comprobar</button>
+          <button type="button" data-next>Página siguiente</button>
+          <button type="button" data-summary>Terminar intento…</button>
+        </div>
+      </div>
+    </section>
+    <section data-view="summary" hidden>
+      <h2 tabindex="-1">Resumen del intento</h2>
+      <p data-pending></p>
+      <div class="actions">
+        <button type="button" data-back>Volver al intento</button>
+        <button type="button" class="primary" data-finish>Enviar todo y terminar</button>
+      </div>
+    </section>
+    <section data-view="review" hidden>
+      <h2 tabindex="-1">Revisión del intento</h2>
+      <dl class="result-summary">
+        <dt>Estado</dt><dd>Finalizado</dd>
+        <dt>Calificación</dt><dd data-score></dd>
+      </dl>
+      <div data-review></div>
+      <div class="actions"><button type="button" data-restart>Configurar otro intento</button></div>
+    </section>
+  </main>
+  <template data-question-template>
+    <div class="question">
+      <div class="question-info">
+        <h3 data-number></h3>
+        <div data-status aria-live="polite"></div>
+        <div data-points></div>
+        <button type="button" class="link-button flag" aria-pressed="false" data-flag>
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 15V2m0 1c3-4 6 3 10 0v7c-4 3-7-4-10 0"/></svg>
+          <span>Marcar pregunta</span>
+        </button>
+      </div>
+      <div>
+        <div class="question-body">
+          <p tabindex="-1" data-prompt></p>
+          <fieldset data-options><legend></legend></fieldset>
+          <button type="button" class="link-button clear" data-clear>Quitar mi elección</button>
+        </div>
+        <div class="feedback" data-explanation hidden>
+          <strong data-verdict></strong>
+          <p data-key></p>
+          <p data-reason></p>
+          <small data-source></small>
+        </div>
+      </div>
+    </div>
+  </template>
+</div>
+
+<script>
+  import { mountQuiz } from '../lib/quiz.js';
+  document.querySelectorAll('[data-quiz]').forEach(mountQuiz);
+</script>

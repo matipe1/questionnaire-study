@@ -1,0 +1,17 @@
+---
+import StudyLayout from '../../layouts/StudyLayout.astro';
+import Quiz from '../../components/Quiz.astro';
+import { exams } from '../../data/exams.js';
+
+export function getStaticPaths() {
+  return exams.map(exam => ({
+    params: { course: exam.course, exam: exam.slug },
+    props: { exam },
+  }));
+}
+
+const { exam } = Astro.props;
+---
+<StudyLayout title={exam.title} courseName={exam.courseName}>
+  <Quiz exam={exam} />
+</StudyLayout>

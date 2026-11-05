@@ -1,16 +1,12 @@
 ---
+import StudyLayout from '../layouts/StudyLayout.astro';
+import { exams } from '../data/exams.js';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<StudyLayout title="Inicio">
+  <main class="frame catalog">
+    <h1>Cuestionarios de estudio</h1>
+    <ul class="exam-list">
+      {exams.map(exam => <li><a href={`/${exam.course}/${exam.slug}/`}>{exam.courseName} · {exam.title}</a><span>{exam.questions.length} preguntas</span></li>)}
+    </ul>
+  </main>
+</StudyLayout>

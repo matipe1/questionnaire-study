@@ -1,0 +1,79 @@
+{
+  "id": "ciencia-de-datos-parcial-piloto",
+  "title": "Ciencia de Datos · Banco piloto",
+  "questions": [
+    {
+      "id": "cdd-001",
+      "unit": 3,
+      "topic": "Análisis exploratorio de datos",
+      "origin": "past-exam",
+      "source": "Captura 1 compartida en el chat",
+      "type": "single",
+      "prompt": "¿Qué herramienta recomienda la cátedra para el análisis exploratorio?",
+      "options": [
+        { "id": "rstudio", "text": "RStudio" },
+        { "id": "tableau", "text": "Tableau" },
+        { "id": "power-bi", "text": "Power BI" },
+        { "id": "colab", "text": "Google Colab" }
+      ],
+      "correctOptionIds": ["colab"],
+      "points": 1,
+      "explanation": "La clave de esta evaluación identifica a Google Colab como la herramienta recomendada por la cátedra para el análisis exploratorio."
+    },
+    {
+      "id": "cdd-002",
+      "unit": 2,
+      "topic": "Fuentes de datos",
+      "origin": "past-exam",
+      "source": "Captura 2 compartida en el chat",
+      "type": "single",
+      "prompt": "¿Qué es web scraping?",
+      "options": [
+        { "id": "diseno", "text": "Una técnica para diseñar sitios web" },
+        { "id": "busqueda", "text": "Una herramienta para optimizar motores de búsqueda" },
+        { "id": "extraccion", "text": "Un método para extraer datos de sitios web" },
+        { "id": "seguridad", "text": "Un protocolo de seguridad web" }
+      ],
+      "correctOptionIds": ["extraccion"],
+      "points": 1,
+      "explanation": "El web scraping permite extraer datos del contenido de sitios web para reutilizarlos o analizarlos."
+    },
+    {
+      "id": "cdd-003",
+      "unit": 2,
+      "topic": "ETL",
+      "origin": "past-exam",
+      "source": "Captura 3 compartida en el chat",
+      "type": "single",
+      "prompt": "¿Cuál es el propósito principal del proceso ETL?",
+      "options": [
+        { "id": "visualizar", "text": "Crear visualizaciones de datos" },
+        { "id": "encriptar", "text": "Encriptar datos sensibles" },
+        { "id": "tiempo-real", "text": "Analizar datos en tiempo real" },
+        { "id": "integrar", "text": "Integrar datos de múltiples fuentes en un destino común" }
+      ],
+      "correctOptionIds": ["integrar"],
+      "points": 1,
+      "explanation": "ETL extrae datos de sus fuentes, los transforma para que puedan integrarse y los carga en un destino común."
+    },
+    {
+      "id": "cdd-004",
+      "unit": 3,
+      "topic": "Comunicación de resultados",
+      "origin": "past-exam",
+      "source": "Captura 4 compartida en el chat",
+      "type": "multiple",
+      "prompt": "¿Cuales de las siguiente características NO corresponde a una presentación efectiva?",
+      "options": [
+        { "id": "grafico-circular", "text": "Mostrar en graficos circulares sin cifras los porcentajes de crecimiento comparado contra otro período" },
+        { "id": "ruidos-gestos", "text": "Provocar la atención del asistente con ruidos y gestos exagerados" },
+        { "id": "tonos", "text": "Llamar la atención con cambios en los tonos de voz" },
+        { "id": "empatia", "text": "Generar empatia con el asistente" },
+        { "id": "toda-informacion", "text": "Proporcionar toda la información recabada durante la investigación" }
+      ],
+      "correctOptionIds": ["grafico-circular", "ruidos-gestos", "toda-informacion"],
+      "points": 1,
+      "explanation": "Una presentación efectiva facilita la comparación entre períodos, mantiene la atención sin distracciones y selecciona los hallazgos relevantes. Variar el tono de voz y generar empatía pueden ayudar a comunicar."
+    }
+  ]
+}
