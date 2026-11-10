@@ -2031,6 +2031,1510 @@
       ],
       "points": 1,
       "explanation": "La transformación unifica las representaciones de los booleanos y las fechas."
+    },
+    {
+      "id": "cdd-sumativa-ia-01",
+      "unit": 4,
+      "topic": "Curva ROC y AUC",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 1 (adaptada)",
+      "type": "single",
+      "prompt": "En un problema de clasificación binaria, ¿qué métrica resume la capacidad del modelo para distinguir entre clases a través de distintos umbrales?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "F1-Score"
+        },
+        {
+          "id": "opcion-2",
+          "text": "AUC-ROC (área bajo la curva ROC)"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Accuracy"
+        },
+        {
+          "id": "opcion-4",
+          "text": "WCSS"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "El AUC-ROC resume la capacidad de separar las clases al variar el umbral de decisión."
+    },
+    {
+      "id": "cdd-sumativa-ia-04",
+      "unit": 4,
+      "topic": "Random Forest",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 2 (adaptada)",
+      "type": "single",
+      "prompt": "En un Random Forest, aumentas el hiperparámetro max_depth (profundidad máxima) de 3 a 30. ¿Cuál es el riesgo principal de este cambio?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El modelo se volverá demasiado simple (underfitting)."
+        },
+        {
+          "id": "opcion-2",
+          "text": "El modelo puede sobreajustarse (overfitting) a los datos de entrenamiento."
+        },
+        {
+          "id": "opcion-3",
+          "text": "El número de árboles (n_estimators) disminuirá automáticamente."
+        },
+        {
+          "id": "opcion-4",
+          "text": "El modelo se volverá un algoritmo no supervisado."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Una profundidad máxima mayor permite cortes más específicos. Los árboles pueden ajustarse al ruido, aunque el ensamble puede reducir ese efecto."
+    },
+    {
+      "id": "cdd-sumativa-ia-05",
+      "unit": 4,
+      "topic": "Interpretación de AUC",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 3 (adaptada)",
+      "type": "single",
+      "prompt": "En clasificación binaria, ¿qué indica un valor de AUC-ROC de 0,5?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Que la capacidad de discriminación es inferior a la del azar."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Que el modelo está necesariamente sobreajustado."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Que el modelo separa perfectamente las clases."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Que, en promedio, la capacidad de discriminación equivale a la del azar."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Un AUC-ROC de 0,5 indica que el modelo, en promedio, no ordena los positivos por encima de los negativos mejor que el azar."
+    },
+    {
+      "id": "cdd-sumativa-ia-07",
+      "unit": 4,
+      "topic": "PCA: autovalores",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 4 (adaptada)",
+      "type": "single",
+      "prompt": "En el Análisis de Componentes Principales (PCA), ¿qué representan los autovalores de la matriz de covarianza?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La dirección de las nuevas características no correlacionadas."
+        },
+        {
+          "id": "opcion-2",
+          "text": "El número óptimo de clusters."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Los falsos positivos del modelo."
+        },
+        {
+          "id": "opcion-4",
+          "text": "La cantidad de varianza que explica cada componente principal."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Cada autovalor expresa la varianza de su componente. Dividirlo por la suma de los autovalores da la proporción de varianza explicada."
+    },
+    {
+      "id": "cdd-sumativa-ia-10",
+      "unit": 4,
+      "topic": "Parámetros e hiperparámetros",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 5 (adaptada)",
+      "type": "single",
+      "prompt": "¿Cuál es la diferencia clave entre un parámetro y un hiperparámetro de un modelo?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Los parámetros se usan en regresión y los hiperparámetros en clustering."
+        },
+        {
+          "id": "opcion-2",
+          "text": "No hay diferencia, son sinónimos."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Los parámetros se aprenden durante el entrenamiento y los hiperparámetros configuran cómo se entrena el modelo."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Los hiperparámetros son solo para redes neuronales y los parámetros para árboles de decisión."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Los coeficientes son parámetros que se ajustan con los datos. La profundidad máxima de un árbol es un hiperparámetro que puede seleccionarse mediante validación."
+    },
+    {
+      "id": "cdd-sumativa-ia-11",
+      "unit": 3,
+      "topic": "Boxplot e IQR",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 6 (adaptada)",
+      "type": "single",
+      "prompt": "En un diagrama de caja (boxplot), ¿qué representa la caja?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La media y la mediana."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Todos los datos del conjunto."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Solo los valores atípicos."
+        },
+        {
+          "id": "opcion-4",
+          "text": "El rango intercuartílico, desde Q1 hasta Q3."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "La caja se extiende desde el primer hasta el tercer cuartil. Su longitud representa Q3 − Q1."
+    },
+    {
+      "id": "cdd-sumativa-ia-13",
+      "unit": 3,
+      "topic": "Selección de gráficos",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 7 (adaptada)",
+      "type": "single",
+      "prompt": "Si querés comparar proporciones muy parecidas entre varias categorías, ¿qué gráfico facilita comparar las longitudes en una escala común?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Un dendrograma."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Un gráfico de dispersión."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Un gráfico de barras."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Un diagrama de caja."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Las barras alineadas a una base común facilitan comparar longitudes. Un gráfico circular exige comparar ángulos o áreas."
+    },
+    {
+      "id": "cdd-sumativa-ia-14",
+      "unit": 4,
+      "topic": "Elección del modelo",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 7 (adaptada)",
+      "type": "single",
+      "prompt": "Un analista quiere estimar el precio de una casa a partir de sus metros cuadrados y su cantidad de habitaciones. ¿Qué tipo de problema y modelo podría usar?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Clasificación mediante regresión logística."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Clasificación mediante PCA."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Regresión mediante regresión lineal."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Agrupamiento mediante K-Means."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "El precio es una variable objetivo cuantitativa. La regresión lineal es una opción para estimarlo a partir de las características."
+    },
+    {
+      "id": "cdd-sumativa-ia-15",
+      "unit": 3,
+      "topic": "Propósito del EDA",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 8 (adaptada)",
+      "type": "single",
+      "prompt": "¿Cuál es el objetivo principal del Análisis Exploratorio de Datos (AED o EDA)?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Construir una base de datos SQL."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Entrenar el modelo final de aprendizaje automático."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Comprender, visualizar y resumir los datos antes de aplicar modelos."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Vender los datos en portales de Open Data."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "El EDA permite conocer las distribuciones, relaciones y anomalías antes de decidir cómo preparar y modelar los datos."
+    },
+    {
+      "id": "cdd-sumativa-ia-17",
+      "unit": 4,
+      "topic": "AdaBoost",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 9 (adaptada)",
+      "type": "single",
+      "prompt": "En AdaBoost para clasificación, ¿qué ocurre con los ejemplos que el clasificador de una iteración clasifica mal?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Se descartan antes de entrenar el siguiente clasificador."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Se usan para elegir el número de componentes principales."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Se duplican con datos sintéticos de su clase."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Aumenta su peso relativo en la siguiente iteración."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Al aumentar el peso relativo de los errores, el próximo clasificador presta más atención a esos ejemplos."
+    },
+    {
+      "id": "cdd-sumativa-ia-18",
+      "unit": 2,
+      "topic": "Exactitud de los datos",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 9 (adaptada)",
+      "type": "single",
+      "prompt": "¿Qué dimensión de la calidad de datos describe que los valores reflejen correctamente la realidad que representan?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Formato."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Completitud."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Coherencia."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Exactitud."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "La exactitud mide si el valor registrado representa correctamente el hecho o entidad que se quiere describir."
+    },
+    {
+      "id": "cdd-sumativa-ia-22",
+      "unit": 4,
+      "topic": "PCA: autovectores",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 11 (adaptada)",
+      "type": "single",
+      "prompt": "En PCA, ¿qué representan los autovectores de la matriz de covarianza?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El número de clusters."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Los valores atípicos."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Las direcciones de las componentes principales."
+        },
+        {
+          "id": "opcion-4",
+          "text": "La varianza explicada por las componentes."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Los autovectores dan las direcciones de proyección. Sus autovalores asociados expresan la varianza en esas direcciones."
+    },
+    {
+      "id": "cdd-sumativa-ia-23",
+      "unit": 4,
+      "topic": "Accuracy y desbalance",
+      "origin": "ai-generated",
+      "source": "CDD - SumativaTodo respondido, sección generada con IA, p. 12 (adaptada)",
+      "type": "single",
+      "prompt": "Un conjunto de prueba tiene 95 % de negativos y 5 % de positivos. Un modelo predice siempre «negativo». ¿Qué métrica puede parecer alta aunque el modelo no detecte ningún positivo?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Exactitud global (accuracy)."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Sensibilidad de la clase positiva (recall)."
+        },
+        {
+          "id": "opcion-3",
+          "text": "F1 de la clase positiva."
+        },
+        {
+          "id": "opcion-4",
+          "text": "AUC-ROC, si el modelo asigna el mismo puntaje a todos los casos."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "El modelo acierta el 95 % de los casos gracias a la clase mayoritaria, pero su recall para la clase positiva es cero."
+    },
+    {
+      "id": "cdd-resumen-ia-01",
+      "unit": 1,
+      "topic": "Tipos de análisis",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 1.1.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un comercio quiere decidir cuánto reponer de cada producto. Ya tiene un pronóstico de demanda y quiere recomendar cantidades según el costo de faltantes y excedentes. ¿Qué tipo de análisis necesita en ese paso?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Descriptivo."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Diagnóstico."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Prescriptivo."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Predictivo."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "El pronóstico estima qué puede pasar. La recomendación de cantidades usa esa estimación y los costos para decidir qué acción tomar."
+    },
+    {
+      "id": "cdd-resumen-ia-02",
+      "unit": 1,
+      "topic": "Hallazgos e insights",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 1.1.4 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un tablero muestra que el abandono se concentra en el paso de verificación y es mayor en celular. ¿Qué formulación convierte mejor ese hallazgo en un insight útil?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La tasa de abandono se registró por dispositivo."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Conviene probar una verificación más simple en celular y medir si baja el abandono en ese paso."
+        },
+        {
+          "id": "opcion-3",
+          "text": "La verificación en celular ya demostró ser la causa del abandono."
+        },
+        {
+          "id": "opcion-4",
+          "text": "La tasa general de abandono resume por igual lo que ocurre en todos los pasos."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La propuesta vincula la evidencia con una acción que se puede evaluar. El hallazgo, por sí solo, no establece causalidad."
+    },
+    {
+      "id": "cdd-resumen-ia-03",
+      "unit": 1,
+      "topic": "KDD y minería de datos",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 1.2.1 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un equipo limpia y transforma transacciones, aplica un algoritmo para encontrar asociaciones y luego evalúa qué patrones resultan útiles. ¿Qué parte corresponde específicamente a la minería de datos dentro de KDD?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Corregir duplicados antes de combinar las transacciones."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Transformar las transacciones a un formato compatible con el algoritmo."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Interpretar la utilidad de los patrones encontrados."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Aplicar el algoritmo para descubrir asociaciones en las transacciones preparadas."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "KDD abarca el proceso completo. La minería de datos es la etapa que aplica métodos para descubrir patrones."
+    },
+    {
+      "id": "cdd-resumen-ia-04",
+      "unit": 1,
+      "topic": "CRISP-DM",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 1.2.2 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Antes de inspeccionar el dataset, un equipo acuerda qué significa reducir la deserción y con qué criterio evaluará el éxito del proyecto. ¿En qué fase de CRISP-DM está trabajando?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Comprensión del negocio."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Comprensión de los datos."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Preparación de los datos."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Evaluación del modelo."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "En comprensión del negocio se definen los objetivos y criterios de éxito. En evaluación se comprueba si los resultados obtenidos los satisfacen."
+    },
+    {
+      "id": "cdd-resumen-ia-05",
+      "unit": 1,
+      "topic": "Experimentación en DDS",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 1.2.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "En una iteración de Data Driven Scrum, el equipo construye un modelo, mide el rendimiento en datos de prueba y decide si el resultado justifica continuar. ¿Cuál es la secuencia correcta?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Observar, crear, analizar."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Crear, observar, analizar."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Crear, analizar, observar."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Analizar, observar, crear."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Construir el modelo es crear. Medir el desempeño es observar. Interpretar la evidencia y decidir el siguiente paso es analizar."
+    },
+    {
+      "id": "cdd-resumen-ia-06",
+      "unit": 1,
+      "topic": "Priorización en DDS",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 1.2.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Dos ítems de investigación prometen un valor parecido. Uno requiere más esfuerzo y tiene menos probabilidad de éxito. ¿Qué criterio de DDS ayuda a decidir cuál atender primero?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Priorizar por antigüedad desde que se creó el ítem."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Priorizar por la cantidad de tareas que tiene cada ítem."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Considerar juntos el valor esperado, el esfuerzo y la probabilidad de éxito."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Priorizar por la complejidad técnica de la solución propuesta."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "DDS considera el valor, el esfuerzo y la probabilidad de éxito porque el resultado de un experimento es incierto."
+    },
+    {
+      "id": "cdd-resumen-ia-07",
+      "unit": 1,
+      "topic": "Tipos de aprendizaje",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 1.3.4 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un equipo tiene 200 imágenes etiquetadas y 10.000 sin etiquetar. Durante el entrenamiento usa ambos grupos para mejorar un clasificador. ¿Qué tipo de aprendizaje describe?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Supervisado con validación cruzada."
+        },
+        {
+          "id": "opcion-2",
+          "text": "No supervisado mediante agrupamiento."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Por refuerzo con recompensas."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Semisupervisado."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "El método aprovecha ejemplos etiquetados y no etiquetados durante el aprendizaje."
+    },
+    {
+      "id": "cdd-resumen-ia-08",
+      "unit": 2,
+      "topic": "ETL y ELT",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.2.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Se extraen eventos de varias fuentes, se cargan sin transformar en el destino y luego se limpian con el motor de ese destino. ¿Qué proceso describe?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "ETL con transformación previa en staging."
+        },
+        {
+          "id": "opcion-2",
+          "text": "ELT, porque la transformación ocurre después de la carga."
+        },
+        {
+          "id": "opcion-3",
+          "text": "ETL con carga incremental, porque los eventos se acumulan en el destino."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Replicación, porque los datos del destino conservan su formato inicial de forma permanente."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "En ELT, el destino recibe los datos antes de que se transformen. En ETL, la transformación precede a la carga al destino."
+    },
+    {
+      "id": "cdd-resumen-ia-09",
+      "unit": 2,
+      "topic": "Modalidades de carga",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.2.2 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Cada noche un almacén debe incorporar registros nuevos y actualizar los modificados sin recargar el historial completo. ¿Qué modalidad conviene?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Carga inicial en cada ejecución."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Reemplazo completo del destino cada noche."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Carga incremental con altas y actualizaciones."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Anexado de registros nuevos sin actualizar los existentes."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "La carga incremental procesa solo los cambios desde la última ejecución. Un anexado puro no actualiza registros existentes."
+    },
+    {
+      "id": "cdd-resumen-ia-10",
+      "unit": 2,
+      "topic": "Captura de cambios",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.2.4 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Una tabla de origen recibe inserciones, modificaciones y borrados. ¿Qué mecanismo permite detectar esas operaciones y usarlas para sincronizar un destino sin releer toda la tabla?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Captura de cambios (CDC)."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Virtualización de datos."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Carga completa de la tabla."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Agregación por períodos."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "CDC identifica las altas, modificaciones y eliminaciones del origen. Esos cambios pueden alimentar una carga incremental."
+    },
+    {
+      "id": "cdd-resumen-ia-11",
+      "unit": 2,
+      "topic": "Inmon y Kimball",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.3.2 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Una organización quiere empezar con un modelo dimensional de ventas y sumar otros procesos integrándolos mediante dimensiones compartidas. ¿Con qué enfoque encaja mejor?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Inmon, porque parte de un almacén corporativo integrado."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Inmon, porque empieza por los modelos dimensionales de cada área."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Kimball, porque exige completar un almacén corporativo antes de entregar cada área."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Kimball, porque construye el almacén de forma incremental a partir de procesos de negocio."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Kimball sigue un enfoque bottom-up. Los modelos dimensionales pueden integrarse mediante dimensiones conformadas."
+    },
+    {
+      "id": "cdd-resumen-ia-12",
+      "unit": 2,
+      "topic": "Data Warehouse y Data Mart",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.3.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Una empresa tiene un almacén integrado y quiere ofrecer al área comercial una vista de datos preparada para sus necesidades específicas. ¿Qué componente encaja con ese objetivo?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El área de staging que recibe datos antes de prepararlos."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Un Data Mart orientado al área comercial."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Una réplica operativa de toda la base transaccional."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Un Data Lake que conserve todas las fuentes en formato nativo."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Un Data Mart organiza un subconjunto de datos para un área o necesidad de análisis concreta."
+    },
+    {
+      "id": "cdd-resumen-ia-13",
+      "unit": 2,
+      "topic": "Hechos y dimensiones",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.3.5 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "En un esquema de ventas, cada fila corresponde a una línea de una venta. ¿Dónde ubicarías las unidades vendidas y el importe, y dónde la categoría del producto?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Unidades e importe en la tabla de hechos. Categoría en la dimensión producto."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Unidades, importe y categoría en la dimensión producto."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Categoría en la tabla de hechos. Unidades e importe en la dimensión producto."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Unidades en la dimensión tiempo. Importe y categoría en la dimensión producto."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "Las medidas se registran al nivel de detalle de la tabla de hechos. La dimensión producto aporta atributos descriptivos como la categoría."
+    },
+    {
+      "id": "cdd-resumen-ia-14",
+      "unit": 2,
+      "topic": "OLAP",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.3.5 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un sistema consulta los totales mensuales en un cubo y accede a las ventas individuales en tablas relacionales. ¿Qué tipo de OLAP describe?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "MOLAP, porque tanto los totales como el detalle están en el cubo."
+        },
+        {
+          "id": "opcion-2",
+          "text": "ROLAP, porque tanto los totales como el detalle se consultan en tablas relacionales."
+        },
+        {
+          "id": "opcion-3",
+          "text": "HOLAP, porque combina resúmenes en el cubo y detalle en tablas relacionales."
+        },
+        {
+          "id": "opcion-4",
+          "text": "MOLAP, porque el detalle relacional determina el tipo de análisis."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "HOLAP combina una estructura multidimensional para los resúmenes con almacenamiento relacional para el detalle."
+    },
+    {
+      "id": "cdd-resumen-ia-15",
+      "unit": 2,
+      "topic": "Schema on read",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.4.1 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un equipo conserva archivos JSON y registros de eventos en su formato original. Cuando un analista los consulta, define los campos y tipos que necesita interpretar. ¿Qué principio aplica?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Schema on write, porque el esquema se fija al guardar los archivos."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Carga incremental, porque el lector elige solo ciertos campos."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Modelo dimensional, porque cada campo consultado se convierte en una dimensión."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Schema on read, porque el esquema se aplica al interpretar los datos."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Con schema on read, los datos pueden guardarse en formato nativo y adquirir una estructura al momento de leerlos."
+    },
+    {
+      "id": "cdd-resumen-ia-16",
+      "unit": 2,
+      "topic": "Warehouse, Lake y Lakehouse",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.4.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un equipo quiere conservar archivos de distintas fuentes en el mismo entorno donde mantiene tablas confiables con actualizaciones y consultas analíticas. ¿Qué enfoque combina esas necesidades?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Un Data Warehouse dedicado exclusivamente a tablas previamente preparadas."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Un Data Lakehouse con una capa de gestión sobre el almacenamiento del Lake."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Un Data Lake que se limite a conservar archivos crudos sin gestionar tablas."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Un Data Mart específico para los reportes de un área."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "El Lakehouse conserva la flexibilidad del almacenamiento del Lake y añade capacidades de gestión de tablas para análisis."
+    },
+    {
+      "id": "cdd-resumen-ia-17",
+      "unit": 2,
+      "topic": "Selección y transformación de atributos",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 2.6.4 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "En un proyecto, primero se elimina una columna identificadora. En otro, se reemplazan diez variables por tres componentes principales. ¿Cómo se clasifican esas operaciones?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La primera es selección de atributos y la segunda es reducción por transformación."
+        },
+        {
+          "id": "opcion-2",
+          "text": "La primera es transformación y la segunda es selección de tres variables originales."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Ambas son selección, porque se conservan menos columnas."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Ambas son agregación de observaciones, porque se reduce la cantidad de filas."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "La selección conserva un subconjunto de variables originales. PCA construye variables nuevas como combinaciones de las originales."
+    },
+    {
+      "id": "cdd-resumen-ia-18",
+      "unit": 3,
+      "topic": "Diagramas de dispersión",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 3.1.4 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Querés explorar si los pedidos más lejanos tardan más y si esa relación cambia según la sucursal. Tenés distancia y tiempo por pedido. ¿Qué gráfico usarías?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Un histograma de distancia con un color por sucursal."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Un gráfico de líneas que conecte los pedidos por su identificador."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Un boxplot de tiempos agrupados por sucursal."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Un diagrama de dispersión de distancia y tiempo, con color por sucursal."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Cada punto conserva ambas medidas del mismo pedido. El color permite comparar las relaciones entre sucursales."
+    },
+    {
+      "id": "cdd-resumen-ia-19",
+      "unit": 3,
+      "topic": "Series temporales",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 3.1.5 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Querés detectar cuándo hubo picos y si hay un patrón semanal en los pedidos diarios de un mes. ¿Qué representación preserva esa información?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Un histograma de cantidades diarias."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Un gráfico de líneas con los días en orden cronológico."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Un boxplot con una sola caja para todo el mes."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Un gráfico de barras con las frecuencias de cada cantidad de pedidos."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "El gráfico de líneas mantiene el orden temporal. Un histograma conserva las frecuencias pero pierde el día en que ocurrió cada valor."
+    },
+    {
+      "id": "cdd-resumen-ia-20",
+      "unit": 3,
+      "topic": "Escalas de gráficos",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 3.3.2 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un gráfico de barras muestra 98 y 100 ventas. El eje vertical empieza en 97 y la segunda barra parece tres veces más alta. ¿Qué ajuste mejora la comparación de magnitudes?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Iniciar el eje vertical en cero y mantener las unidades."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Reducir el rango vertical para destacar aún más la diferencia."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Cambiar ambas barras al mismo color y conservar el eje truncado."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Invertir el orden de las categorías y mantener la escala."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "Como las barras codifican magnitudes mediante su longitud, partir de cero evita exagerar la proporción entre 98 y 100."
+    },
+    {
+      "id": "cdd-resumen-ia-21",
+      "unit": 3,
+      "topic": "Asociación y causalidad",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 3.2.4 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "En los datos históricos, los clientes que recibieron una promoción compraron más. La promoción se envió principalmente a quienes ya compraban con frecuencia. ¿Qué conclusión permite el análisis exploratorio?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La promoción causó el aumento de ventas observado."
+        },
+        {
+          "id": "opcion-2",
+          "text": "La promoción no tuvo ningún efecto sobre las ventas."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Hay una asociación y el comportamiento previo podría explicar parte de la diferencia."
+        },
+        {
+          "id": "opcion-4",
+          "text": "El comportamiento previo explica toda la diferencia y permite descartar cualquier efecto de la promoción."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Los grupos ya diferían en su frecuencia de compra. La asociación observada no permite aislar el efecto de la promoción."
+    },
+    {
+      "id": "cdd-resumen-ia-22",
+      "unit": 4,
+      "topic": "Diagnóstico con residuos",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.1.4–4.1.5 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "En un gráfico de residuos contra valores predichos, los residuos están centrados alrededor de cero, pero forman un abanico que se abre hacia la derecha. ¿Qué supuesto resulta cuestionado directamente?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Independencia entre observaciones."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Homocedasticidad de los errores."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Ausencia de multicolinealidad entre predictores."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Normalidad de los errores."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "El abanico indica que la dispersión de los residuos cambia según el nivel de la predicción. La homocedasticidad supone varianza constante."
+    },
+    {
+      "id": "cdd-resumen-ia-23",
+      "unit": 4,
+      "topic": "Interpretación de R²",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.1.5 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un modelo obtiene R² = −0,2 en el conjunto de prueba. ¿Cómo se interpreta ese resultado?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El modelo explica el 20 % de la variabilidad."
+        },
+        {
+          "id": "opcion-2",
+          "text": "El modelo comete un error absoluto promedio de 0,2."
+        },
+        {
+          "id": "opcion-3",
+          "text": "La variable objetivo tiene una correlación de −0,2 con todos los predictores."
+        },
+        {
+          "id": "opcion-4",
+          "text": "El modelo tiene mayor suma de errores cuadrados que predecir siempre la media del conjunto evaluado."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "R² se calcula como 1 menos el cociente entre el error cuadrático acumulado del modelo y el de la referencia que predice la media. Un valor negativo indica que el cociente supera 1."
+    },
+    {
+      "id": "cdd-resumen-ia-24",
+      "unit": 4,
+      "topic": "Umbral de clasificación",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.2.3 y 4.3.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "En un detector de fraude, se clasifican como positivos los casos con puntaje mayor o igual al umbral. Si bajás el umbral y mantenés los mismos puntajes, ¿qué puede pasar?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Se pueden detectar más fraudes, a costa de sumar falsas alarmas."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Se pueden detectar más fraudes y reducir las falsas alarmas al mismo tiempo."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Se reducen los positivos predichos y se pierden más fraudes."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Solo cambia el AUC, porque las etiquetas predichas se mantienen."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "Bajar el umbral amplía el conjunto de positivos predichos. Puede sumar verdaderos positivos y también falsos positivos."
+    },
+    {
+      "id": "cdd-resumen-ia-25",
+      "unit": 4,
+      "topic": "Matriz de confusión, precision y recall",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.3.1–4.3.2 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un clasificador obtuvo 36 verdaderos positivos, 12 falsos positivos y 24 falsos negativos. ¿Cuáles son su precision y su recall para la clase positiva, respectivamente?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "60 % y 75 %."
+        },
+        {
+          "id": "opcion-2",
+          "text": "75 % y 50 %."
+        },
+        {
+          "id": "opcion-3",
+          "text": "75 % y 60 %."
+        },
+        {
+          "id": "opcion-4",
+          "text": "50 % y 60 %."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Precision = 36/(36 + 12) = 75 %. Recall = 36/(36 + 24) = 60 %."
+    },
+    {
+      "id": "cdd-resumen-ia-26",
+      "unit": 4,
+      "topic": "Ganancia de información",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.4.2 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Dos cortes dejan una entropía ponderada de 0,40 y 0,55, respectivamente. El nodo padre tiene entropía 0,90. Según la ganancia de información, ¿qué corte conviene?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El segundo, porque su ganancia es 0,55."
+        },
+        {
+          "id": "opcion-2",
+          "text": "El primero, porque reduce la entropía en 0,50 frente a 0,35 del segundo."
+        },
+        {
+          "id": "opcion-3",
+          "text": "El segundo, porque reduce la entropía en 0,55 frente a 0,40 del primero."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Son equivalentes, porque parten de la misma entropía."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La ganancia es la entropía del padre menos la entropía ponderada de los hijos. Resultan 0,50 y 0,35."
+    },
+    {
+      "id": "cdd-resumen-ia-27",
+      "unit": 4,
+      "topic": "Sobreajuste y poda",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.4.4 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Un árbol casi no falla en entrenamiento, pero su desempeño cae en validación. Muchas hojas tienen uno o dos ejemplos. ¿Qué ajuste responde mejor a ese diagnóstico?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Permitir que el árbol siga dividiendo hasta que las hojas queden puras."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Reducir el mínimo de ejemplos necesario para formar una hoja."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Aumentar la profundidad máxima del árbol para mejorar el ajuste al entrenamiento."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Limitar la profundidad o podar el árbol y volver a evaluar en validación."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Reducir la complejidad ayuda a evitar reglas demasiado específicas del entrenamiento. La validación permite comprobar si el cambio mejora la generalización."
+    },
+    {
+      "id": "cdd-resumen-ia-28",
+      "unit": 4,
+      "topic": "One-vs-All y One-vs-One",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.5.1–4.5.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Para un problema de cinco clases, ¿cuántos clasificadores binarios se entrenan con One-vs-All y con One-vs-One, respectivamente?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "5 y 10."
+        },
+        {
+          "id": "opcion-2",
+          "text": "5 y 20."
+        },
+        {
+          "id": "opcion-3",
+          "text": "10 y 5."
+        },
+        {
+          "id": "opcion-4",
+          "text": "4 y 10."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "One-vs-All entrena un clasificador por clase. One-vs-One entrena uno por cada par de clases: 5 × 4 / 2 = 10."
+    },
+    {
+      "id": "cdd-resumen-ia-29",
+      "unit": 4,
+      "topic": "Predicción con KNN",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.6.1 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Los cuatro vecinos más cercanos de un caso están a 1 m, 2 m, 2,2 m y 3 m, con clases A, B, B y A, en ese orden. ¿Qué predice KNN con K = 3 y voto sin ponderar?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "A, porque el vecino más cercano es de clase A."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Empate, porque hay dos vecinos de cada clase entre los cuatro."
+        },
+        {
+          "id": "opcion-3",
+          "text": "B, porque dos de los tres vecinos considerados son de clase B."
+        },
+        {
+          "id": "opcion-4",
+          "text": "A, porque las distancias acumuladas de sus dos vecinos son menores."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "KNN toma solo los tres primeros vecinos. Sus clases son A, B y B, por lo que gana B."
+    },
+    {
+      "id": "cdd-resumen-ia-30",
+      "unit": 4,
+      "topic": "KNN y escalado",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.6.3 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "En KNN con distancia euclídea, el ingreso anual varía en decenas de miles y la edad en decenas de años. Ambos predictores importan. ¿Qué riesgo hay si usás los valores crudos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La edad va a dominar por tener el rango numérico más chico."
+        },
+        {
+          "id": "opcion-2",
+          "text": "El ingreso puede dominar la distancia debido a su escala numérica."
+        },
+        {
+          "id": "opcion-3",
+          "text": "La distancia deja de depender de ambos predictores."
+        },
+        {
+          "id": "opcion-4",
+          "text": "El ingreso solo puede influir si K vale 1."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La distancia se calcula a partir de diferencias numéricas. Escalar los predictores ayuda a que una diferencia grande en unidades no domine por sí sola."
+    },
+    {
+      "id": "cdd-resumen-ia-31",
+      "unit": 4,
+      "topic": "Bagging y Random Forest",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.7.3–4.7.4 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Se entrenan árboles con muestras bootstrap. Además, en cada división se considera un subconjunto aleatorio de predictores. ¿Qué mecanismo aporta ese segundo paso?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Ajusta el peso de los ejemplos que cada árbol anterior clasificó mal."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Entrena un metamodelo a partir de las salidas de los árboles."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Hace que todos los árboles usen las mismas variables en los primeros niveles."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Diversifica las divisiones y ayuda a reducir la correlación entre árboles."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Random Forest combina el muestreo de observaciones con selección aleatoria de variables en los nodos, lo que favorece la diversidad entre árboles."
+    },
+    {
+      "id": "cdd-resumen-ia-32",
+      "unit": 4,
+      "topic": "Hard voting y soft voting",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.7.2 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Tres clasificadores binarios estiman para la clase A probabilidades de 0,51, 0,52 y 0,05. Con umbral individual de 0,5 y pesos iguales, ¿qué predicen el hard voting y el soft voting, respectivamente?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "A y B."
+        },
+        {
+          "id": "opcion-2",
+          "text": "B y A."
+        },
+        {
+          "id": "opcion-3",
+          "text": "A y A."
+        },
+        {
+          "id": "opcion-4",
+          "text": "B y B."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "Dos modelos votan por A, así que gana por mayoría. Al promediar las probabilidades, A obtiene 0,36 y el soft voting elige B."
+    },
+    {
+      "id": "cdd-resumen-ia-33",
+      "unit": 4,
+      "topic": "Stacking",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.7.7–4.7.8 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Tenés un árbol, un KNN y una regresión logística. Querés que un modelo final aprenda a combinar sus predicciones. ¿Qué procedimiento corresponde a stacking?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Dar un voto a cada modelo y elegir la clase más votada."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Entrenar copias del mismo árbol sobre muestras bootstrap y promediar."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Entrenar un metamodelo con predicciones de los modelos base obtenidas fuera de su partición de entrenamiento."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Entrenar los modelos en secuencia dando más peso a los errores del anterior."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "En stacking, un metamodelo aprende a combinar las predicciones base. Usar predicciones fuera de la partición de entrenamiento evita alimentarlo con predicciones hechas sobre los mismos ejemplos con los que se ajustó cada modelo base."
+    },
+    {
+      "id": "cdd-resumen-ia-34",
+      "unit": 4,
+      "topic": "Varianza explicada por PCA",
+      "origin": "ai-generated",
+      "source": "Resumen - CDD, § 4.8.1 (pregunta generada con IA)",
+      "type": "single",
+      "prompt": "Cuatro componentes principales explican el 50 %, 25 %, 15 % y 10 % de la varianza, en ese orden. ¿Cuántas primeras componentes necesitás como mínimo para conservar al menos el 80 %?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Dos, porque juntas alcanzan el 75 %."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Tres, porque juntas alcanzan el 90 %."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Cuatro, porque el 80 % no coincide exactamente con ninguna suma parcial."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Una, porque explica más que las demás por separado."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La varianza explicada acumulada es 50 %, 75 %, 90 % y 100 %. El primer acumulado que llega al 80 % usa tres componentes."
     }
   ]
 }
