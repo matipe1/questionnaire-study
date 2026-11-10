@@ -1303,6 +1303,734 @@
       ],
       "points": 1,
       "explanation": "Una presentación efectiva facilita comparar datos, mantiene la atención sin exageraciones y selecciona la información pertinente."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-01",
+      "unit": 2,
+      "topic": "Datos faltantes",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 11, pregunta 1",
+      "type": "single",
+      "prompt": "¿Qué opción es correcta frente a datos faltantes en un dataset?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Se reemplazan por ceros"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Siempre se eliminan todas las filas"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Se imputan o eliminan según su relevancia"
+        },
+        {
+          "id": "opcion-4",
+          "text": "No afectan el modelo"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "El tratamiento depende del contexto y de la importancia de los datos faltantes. Se pueden imputar valores o descartar registros cuando esté justificado."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-02",
+      "unit": 1,
+      "topic": "Ciencia de Datos y BI",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 12, pregunta 2",
+      "type": "single",
+      "prompt": "¿Qué diferencia fundamental hay entre Ciencia de Datos y Business Intelligence (BI)?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "BI usa Python y Ciencia de Datos Excel"
+        },
+        {
+          "id": "opcion-2",
+          "text": "BI es más científica que la Ciencia de Datos"
+        },
+        {
+          "id": "opcion-3",
+          "text": "BI se enfoca en análisis histórico; Ciencia de Datos en predicción"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Ciencia de Datos reemplaza al BI"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "La respuesta recoge el contraste de énfasis de la cátedra entre el análisis histórico y el uso de modelos para predecir."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-04",
+      "unit": 4,
+      "topic": "Validación cruzada",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 14, pregunta 4",
+      "type": "single",
+      "prompt": "Aumentar el número de folds en validación cruzada produce generalmente:",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Ningún cambio"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Peor estimación"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Una estimación más estable pero mayor costo computacional"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Menos precisión"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "La clave del parcial destaca el costo de entrenar más modelos. La estabilidad de la estimación depende del modelo, los datos y la partición."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-05",
+      "unit": 1,
+      "topic": "Roles de Ciencia de Datos",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 15, pregunta 5",
+      "type": "single",
+      "prompt": "¿Cuál de los siguientes roles se asocia principalmente al conocimiento del dominio?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Data Engineer"
+        },
+        {
+          "id": "opcion-2",
+          "text": "DevOps Engineer"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Domain Expert"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Data Scientist"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "El Domain Expert aporta conocimiento del problema y su contexto."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-06",
+      "unit": 4,
+      "topic": "Métricas de regresión",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 16, pregunta 6",
+      "type": "single",
+      "prompt": "¿Qué indica un MSE alto en un modelo de regresión?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Que los datos están balanceados"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Que el modelo tiene bajo sesgo"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Que el modelo predice con precisión"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Que los errores promedio son grandes"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Un MSE alto indica un promedio elevado de errores al cuadrado en la escala del problema."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-09",
+      "unit": 3,
+      "topic": "Correlación",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 19, pregunta 9",
+      "type": "single",
+      "prompt": "Un coeficiente de correlación cercano a 0 entre dos variables indica:",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Correlación positiva fuerte"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Ausencia de relación lineal significativa"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Correlación negativa fuerte"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Error de cálculo"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Una correlación cercana a cero indica poca asociación lineal en los datos. Pueden existir relaciones no lineales y la significación estadística se evalúa por separado."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-10",
+      "unit": 3,
+      "topic": "Histogramas",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 20, pregunta 10",
+      "type": "single",
+      "prompt": "¿Qué permite observar un histograma en el análisis exploratorio?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "El valor máximo y mínimo"
+        },
+        {
+          "id": "opcion-2",
+          "text": "La correlación entre variables"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Los valores faltantes"
+        },
+        {
+          "id": "opcion-4",
+          "text": "La distribución de frecuencias de una variable"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Un histograma agrupa los valores en intervalos y muestra la frecuencia en cada uno."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-11",
+      "unit": 3,
+      "topic": "Visualización de datos",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 21, pregunta 11",
+      "type": "single",
+      "prompt": "¿Cuál es el objetivo principal de la visualización de datos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Generar dashboards automáticos"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Comunicar hallazgos y patrones con claridad"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Mostrar todos los datos posibles"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Sustituir el análisis estadístico"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La representación gráfica ayuda a comunicar patrones y hallazgos de forma clara."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-12",
+      "unit": 3,
+      "topic": "Valores atípicos",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 22, pregunta 12",
+      "type": "single",
+      "prompt": "¿Qué se busca al detectar outliers durante el análisis exploratorio?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Agrupar datos faltantes"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Reconocer valores extremos que pueden distorsionar el modelo"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Identificar registros duplicados"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Encontrar la media general"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "Detectar valores extremos permite evaluar si afectan las conclusiones o el ajuste del modelo."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-13",
+      "unit": 3,
+      "topic": "Estructura narrativa",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 23, pregunta 13",
+      "type": "single",
+      "prompt": "¿Qué estructura narrativa se recomienda para presentar un análisis con datos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Datos → Código → Conclusión"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Contexto → Métrica → Resultado"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Introducción → Desarrollo → Cierre"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Desarrollo → Cierre → Introducción"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "La introducción plantea el contexto, el desarrollo presenta la evidencia y el cierre sintetiza el hallazgo."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-14",
+      "unit": 3,
+      "topic": "Data Storytelling",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 24, pregunta 14",
+      "type": "single",
+      "prompt": "¿Qué elementos componen un storytelling con datos efectivo?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Tablas, KPIs y código"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Narrativa, datos y visualización"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Datos, gráficos y colores"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Modelos, métricas y ecuaciones"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La narrativa guía la interpretación, los datos sustentan lo que se afirma y la visualización ayuda a comunicarlo."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-15",
+      "unit": 4,
+      "topic": "Métricas de regresión",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 25, pregunta 15",
+      "type": "single",
+      "prompt": "¿Qué representa el MAE?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Promedio de los errores absolutos"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Error cuadrático medio"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Desvío estándar"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Error relativo"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "El MAE promedia las magnitudes absolutas de los errores de predicción."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-17",
+      "unit": 2,
+      "topic": "Escalado",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 27, pregunta 17",
+      "type": "single",
+      "prompt": "¿Qué significa “escalar” una variable numérica?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Convertirla a texto"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Transformarla a media 0 y desviación estándar 1"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Agruparla por rangos"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Eliminarla"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La clave del parcial describe la estandarización. Es una forma de escalado, al igual que Min-Max."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-18",
+      "unit": 4,
+      "topic": "Sesgo y varianza",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 28, pregunta 18",
+      "type": "single",
+      "prompt": "¿Qué característica tiene un modelo con alta varianza?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Invarianza ante datos nuevos"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Usa pocas variables"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Error bajo en test y train"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Se ajusta mucho al train y falla en test"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "Un modelo con alta varianza es sensible al conjunto de entrenamiento y puede rendir mal en datos nuevos."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-19",
+      "unit": 4,
+      "topic": "Generalización",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 29, pregunta 19",
+      "type": "single",
+      "prompt": "¿Qué efecto suele tener aumentar el tamaño del conjunto de entrenamiento?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Mejora la generalización y reduce el sobreajuste"
+        },
+        {
+          "id": "opcion-2",
+          "text": "No tiene efecto"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Empeora la precisión"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Aumenta la varianza"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "Agregar observaciones representativas suele ayudar a que el modelo aprenda patrones que se sostienen en datos nuevos."
+    },
+    {
+      "id": "cdd-uv-parcial-2025-20",
+      "unit": 1,
+      "topic": "Propósito de Ciencia de Datos",
+      "origin": "past-exam",
+      "source": "parciales_CDD_merged_OCR, Parcial teórico 5K2, Tema A, p. 30, pregunta 20",
+      "type": "single",
+      "prompt": "¿Qué objetivo principal persigue la Ciencia de Datos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Extraer conocimiento útil a partir de los datos"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Diseñar hardware para IA"
+        },
+        {
+          "id": "opcion-3",
+          "text": "Automatizar la programación"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Almacenar grandes volúmenes de datos"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "El objetivo es obtener conocimiento útil que pueda informar decisiones o resolver problemas."
+    },
+    {
+      "id": "cdd-uv-visita-2026-01",
+      "unit": 1,
+      "topic": "Visita de experto: objetivo del estudio",
+      "origin": "past-exam",
+      "source": "Evaluación Formativa 24/04/2026, Visita de Experto, p. 1, pregunta 1",
+      "type": "single",
+      "prompt": "¿Cuál fue el objetivo principal del estudio realizado en 2023 por el grupo de CDD?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Digitalizar todos los archivos en papel del rectorado."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Realizar un estudio sobre la deserción estudiantil basado en el contexto socioeconómico."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Crear una herramienta para el pago de becas internacionales."
+        },
+        {
+          "id": "opcion-4",
+          "text": "A) Desarrollar un nuevo sistema de gestión académica"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "El estudio analizó la deserción estudiantil teniendo en cuenta el contexto socioeconómico."
+    },
+    {
+      "id": "cdd-uv-visita-2026-02",
+      "unit": 2,
+      "topic": "Visita de experto: calidad de datos",
+      "origin": "past-exam",
+      "source": "Evaluación Formativa 24/04/2026, Visita de Experto, p. 2, pregunta 2",
+      "type": "single",
+      "prompt": "Referente a la documentación de campos ¿Qué discrepancia se encontró en los registros de SIU Araucano respecto a su documentación?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "La documentación no especifica el nombre de los campos."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Todos los registros tienen exactamente 130 columnas siempre llenos."
+        },
+        {
+          "id": "opcion-3",
+          "text": "La documentación está escrita en un lenguaje obsoleto."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Las filas no siempre traen la misma cantidad de columnas"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-4"
+      ],
+      "points": 1,
+      "explanation": "En el caso presentado, la cantidad de columnas variaba entre filas."
+    },
+    {
+      "id": "cdd-uv-visita-2026-04",
+      "unit": 2,
+      "topic": "Visita de experto: valores nulos",
+      "origin": "past-exam",
+      "source": "Evaluación Formativa 24/04/2026, Visita de Experto, p. 3, pregunta 4",
+      "type": "single",
+      "prompt": "En la etapa de transformación (ETL), ¿qué acción se toma respecto a los valores nulos?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Se ignoran para no alterar las estadísticas."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Se solicita a los estudiantes que completen los datos faltantes"
+        },
+        {
+          "id": "opcion-3",
+          "text": "No se borran sin antes ver si es conveniente completarlos (por ejemplo, con \"N\")"
+        },
+        {
+          "id": "opcion-4",
+          "text": "Se borran automáticamente todos los registros con nulos."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "En este caso se evalúa si conviene completar los valores antes de eliminar registros."
+    },
+    {
+      "id": "cdd-uv-visita-2026-05",
+      "unit": 3,
+      "topic": "Visita de experto: análisis exploratorio",
+      "origin": "past-exam",
+      "source": "Evaluación Formativa 24/04/2026, Visita de Experto, p. 3, pregunta 5",
+      "type": "single",
+      "prompt": "Referente a la utilidad de las gráficas ¿Para qué se utiliza principalmente el análisis exploratorio mediante gráficas en el proyecto?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Para decorar los informes finales de la Secretaría."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Para reemplazar la necesidad de tener un Product Owner (PO)."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Para mostrar avances y tomar nuevas definiciones más informadas."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Para detectar virus informáticos en los archivos .zip recibidos."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-3"
+      ],
+      "points": 1,
+      "explanation": "Las gráficas permiten mostrar avances, validarlos con el Product Owner y tomar decisiones con mejor información."
+    },
+    {
+      "id": "cdd-uv-visita-2026-06",
+      "unit": 2,
+      "topic": "Visita de experto: heterogeneidad de fuentes",
+      "origin": "past-exam",
+      "source": "Evaluación Formativa 24/04/2026, Visita de Experto, p. 4, pregunta 6",
+      "type": "single",
+      "prompt": "Cada regional de la universidad carga sus archivos de manera homogénea siguiendo un único estándar estricto.",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Verdadero"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "El caso muestra diferencias de formato y estructura en los archivos que entregan las regionales."
+    },
+    {
+      "id": "cdd-uv-visita-2026-07",
+      "unit": 2,
+      "topic": "Visita de experto: SIU Araucano",
+      "origin": "past-exam",
+      "source": "Evaluación Formativa 24/04/2026, Visita de Experto, p. 4, pregunta 7",
+      "type": "single",
+      "prompt": "¿Qué característica presentan los archivos brindados por las regionales bajo el sistema SIU Araucano?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Se entregan como 4 Office Forms de difícil migración."
+        },
+        {
+          "id": "opcion-2",
+          "text": "Son 30 archivos .zip que contienen 10 archivos .txt cada uno."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Son 16 archivos en formato CSV sin relación entre sí."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Son archivos XML que se actualizan automáticamente cada tres meses."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-2"
+      ],
+      "points": 1,
+      "explanation": "La respuesta calificada como correcta identifica los archivos comprimidos y su contenido en TXT."
+    },
+    {
+      "id": "cdd-uv-visita-2026-08",
+      "unit": 2,
+      "topic": "Visita de experto: transformación de datos",
+      "origin": "past-exam",
+      "source": "Evaluación Formativa 24/04/2026, Visita de Experto, p. 5, pregunta 8",
+      "type": "single",
+      "prompt": "¿Cuál es uno de los formatos homogéneos a los que se transforman los datos en la Etapa 2?",
+      "options": [
+        {
+          "id": "opcion-1",
+          "text": "Boolean a binario y fechas a DD/MM/AAAA"
+        },
+        {
+          "id": "opcion-2",
+          "text": "Todos los CUIL se transforman a nombres de usuario aleatorios."
+        },
+        {
+          "id": "opcion-3",
+          "text": "Todas las edades a formato de punto flotante."
+        },
+        {
+          "id": "opcion-4",
+          "text": "Fechas a formato de texto largo y nombres en binario."
+        }
+      ],
+      "correctOptionIds": [
+        "opcion-1"
+      ],
+      "points": 1,
+      "explanation": "La transformación unifica las representaciones de los booleanos y las fechas."
     }
   ]
 }
