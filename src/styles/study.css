@@ -45,6 +45,8 @@ button.primary:hover:not(:disabled) { background: #0b579a; }
 .question-index { display: flex; flex-wrap: wrap; gap: .35rem; }
 .question-index button { min-width: 2rem; min-height: 2rem; padding: .2rem; border: 1px solid #929ca4; background: white; position: relative; }
 .question-index button.answered { background: #d2e3ef; }
+.question-index button.correct, .question-index button.correct:hover { background: #d8eddf; color: #155c32; border-color: #155c32; }
+.question-index button.incorrect, .question-index button.incorrect:hover { background: #f8dddd; color: #8b2525; border-color: #8b2525; }
 .question-index button[aria-current="step"] { border: 2px solid var(--primary); }
 .question-index button.flagged::after { content: ""; position: absolute; right: 0; top: 0; border-top: .45rem solid #a0302a; border-left: .45rem solid transparent; }
 .quiz-main { min-width: 0; padding: 1.15rem 1.4rem 3rem; border-right: 1px solid var(--border); }
@@ -72,6 +74,8 @@ form legend { font-weight: 600; padding: 0 .55rem 0 0; }
 .clear { margin: .65rem 0 0 1.75rem; }
 .feedback { margin-top: .65rem; background: #fff4d7; border-radius: .45rem; padding: .85rem 1rem; overflow-wrap: anywhere; }
 .feedback p { margin: .35rem 0; }
+.feedback [data-key] { white-space: pre-line; }
+.feedback hr { border: 0; border-top: 1px solid #c9b77d; margin: .75rem 0; }
 .feedback small { color: #5b4d2a; font-size: .75rem; }
 .actions, .actions-group { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
 .actions { justify-content: space-between; margin-top: 1.1rem; }

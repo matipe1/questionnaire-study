@@ -63,10 +63,17 @@ export function mountQuiz(root) {
     const index = find('index');
     index.querySelectorAll('button').forEach((button, i) => {
       const item = items[i];
+      const correct = item.checked && isCorrect(item);
+      const incorrect = item.checked && !correct;
+      const state = item.checked ? (correct ? 'correcta' : 'incorrecta') : (item.selected.size ? 'respondida' : 'sin responder');
       button.classList.toggle('answered', item.selected.size > 0);
+      button.classList.toggle('correct', correct);
+      button.classList.toggle('incorrect', incorrect);
       button.classList.toggle('flagged', item.flagged);
       button.setAttribute('aria-current', i === position ? 'step' : 'false');
-      button.setAttribute('aria-label', `Pregunta ${i + 1}, ${item.selected.size ? 'respondida' : 'sin responder'}${item.flagged ? ', marcada' : ''}`);
+      const label = `Pregunta ${i + 1}, ${state}${item.flagged ? ', marcada' : ''}`;
+      button.setAttribute('aria-label', label);
+      button.title = label;
     });
   }
 
@@ -155,7 +162,8 @@ export function mountQuiz(root) {
       if (verdict) result.classList.add(verdict);
       result.textContent = status.textContent;
       select('verdict').append(result, ` · ${formatPoints.format(earned)} de ${formatPoints.format(item.points)} puntos`);
-      select('key').textContent = 'Respuesta correcta: ' + item.options.filter(o => item.correctOptionIds.includes(o.id)).map(o => o.text).join(' · ');
+      const answers = item.options.filter(o => item.correctOptionIds.includes(o.id)).map(o => o.text);
+      select('key').textContent = (answers.length > 1 ? 'Respuestas correctas:\n' : 'Respuesta correcta:\n') + answers.join('\n');
       select('reason').textContent = item.explanation;
       select('source').textContent = [originLabels[item.origin], item.source].filter(Boolean).join(' · ');
     }
