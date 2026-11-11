@@ -198,12 +198,10 @@ export function mountQuiz(root) {
     if (seconds === 0) finishAttempt(true);
   }
 
-  form.addEventListener('submit', event => {
-    event.preventDefault();
-    const filtered = eligible();
-    if (!filtered.length) return;
+  function startAttempt(questions) {
+    if (!questions.length) return;
     const settings = new FormData(form);
-    const ordered = settings.get('order') === 'mixed' ? shuffle(filtered) : [...filtered].sort((a, b) => a.unit - b.unit);
+    const ordered = settings.get('order') === 'mixed' ? shuffle(questions) : [...questions].sort((a, b) => a.unit - b.unit);
     items = ordered.map(item => ({ ...item, options: shuffle(item.options), selected: new Set(), flagged: false, checked: false }));
     immediate = settings.get('feedback') === 'each';
     find('index').replaceChildren(...items.map((_, i) => {
@@ -219,7 +217,13 @@ export function mountQuiz(root) {
       updateTimer();
       timerId = setInterval(updateTimer, 250);
     }
+    find('review').replaceChildren();
     openQuestion(0);
+  }
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    startAttempt(eligible());
   });
 
   find('previous').addEventListener('click', () => openQuestion(position - 1));
@@ -247,9 +251,17 @@ export function mountQuiz(root) {
     const max = items.reduce((sum, item) => sum + item.points, 0);
     find('score').textContent = `${formatPoints.format(score)} de ${formatPoints.format(max)}`;
     find('review').replaceChildren(...items.map((item, i) => renderQuestion(item, i, true)));
+    const failed = failedQuestions();
+    find('retry').hidden = failed.length === 0;
+    find('retry').textContent = `Reintentar preguntas falladas (${failed.length})`;
     show('review');
     root.querySelector('[data-view="review"] h2').focus();
   }
+  function failedQuestions() {
+    return items.filter(item => item.selected.size > 0 && !isCorrect(item));
+  }
+
+  find('retry').addEventListener('click', () => startAttempt(failedQuestions()));
   find('finish').addEventListener('click', () => finishAttempt());
   find('restart').addEventListener('click', () => {
     show('setup');

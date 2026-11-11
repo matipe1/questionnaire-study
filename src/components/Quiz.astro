@@ -82,13 +82,16 @@ const available = new Set(exam.questions.map(question => question.unit));
     </section>
     <section data-view="review" hidden>
       <h2 tabindex="-1">Revisión del intento</h2>
+      <button type="button" class="primary review-retry" data-retry hidden>Reintentar preguntas falladas</button>
       <p data-time-expired hidden>Se agotó el tiempo. El intento se envió automáticamente.</p>
       <dl class="result-summary">
         <dt>Estado</dt><dd>Finalizado</dd>
         <dt>Calificación</dt><dd data-score></dd>
       </dl>
       <div data-review></div>
-      <div class="actions"><button type="button" data-restart>Configurar otro intento</button></div>
+      <div class="actions">
+        <button type="button" data-restart>Configurar otro intento</button>
+      </div>
     </section>
   </main>
   <template data-question-template>

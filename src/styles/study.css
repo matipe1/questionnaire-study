@@ -79,6 +79,7 @@ form legend { font-weight: 600; padding: 0 .55rem 0 0; }
 .feedback small { color: #5b4d2a; font-size: .75rem; }
 .actions, .actions-group { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
 .actions { justify-content: space-between; margin-top: 1.1rem; }
+.review-retry { margin-bottom: 1rem; }
 .result-summary { display: grid; grid-template-columns: max-content 1fr; max-width: 42rem; border: 1px solid var(--border); border-radius: .4rem; margin: 0 0 1.3rem; overflow: hidden; }
 .result-summary > * { margin: 0; padding: .4rem .75rem; background: var(--panel); }
 .result-summary dt { font-weight: 600; background: #ebedef; }
